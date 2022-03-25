@@ -2,11 +2,9 @@ require xen-source.inc
 
 RDEPENDS_${PN} += "${PN}-devd"
 
-PACKAGES_append = "\
-    ${PN}-libxenhypfs \
-    ${PN}-libxenhypfs-dev \
-    ${PN}-xenhypfs \
-    ${PN}-xen-access \
+FILES_${PN} += "\
+    ${libdir}/xen/bin/test-xenstore \
+    ${libdir}/xen/bin/test-resource \
     "
 
 FILES_${PN}-xenhypfs = "\
