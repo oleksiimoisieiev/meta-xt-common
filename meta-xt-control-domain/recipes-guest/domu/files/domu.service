@@ -1,7 +1,7 @@
 [Unit]
 Description=DomU
-Requires=backend-ready@displbe.service backend-ready@sndbe.service
-After=backend-ready@displbe.service backend-ready@sndbe.service
+Requires=displbe.service sndbe.service
+After=displbe.service sndbe.service
 
 [Service]
 Type=oneshot
